@@ -8,6 +8,7 @@
 
 int main();
 void addautolevel();
+void settings();
 
 // this function creates an empty puzzle with only 0's
 int** createemptypuzzle()
@@ -143,12 +144,11 @@ int** createPuzzle()
     }
 
     if (lvlc==0){
-        printf("\n\nCreate a level to continue\n");
         printf("\n\nWant to add new level ?\n\n");
         printf("Press 1 to continue or eny key to return to home page..\n");
         scanf("%d",&choice);
         if (choice==1){
-            addautolevel();
+            settings();
         }else{
             main();
         }

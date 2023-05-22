@@ -49,19 +49,19 @@ void addautolevel()
     switch (difficulty)
     {
     case 1:
-        a = 41 ;
-        b = 5 ;
+        a = 41 ; // number of empty places to be made 
+        b = 5 ; // number of random places in the puzzle
         fptr = fopen("easy.txt","a");
         break;
     case 2:
         fptr = fopen("medium.txt","a");
-        a = 48 ;
-        b = 8 ;
+        a = 48 ; // number of empty places to be made
+        b = 8 ; // number of random places in the puzzle
         break;
     case 3:
         fptr = fopen("hard.txt","a");
-        a = 56 ;
-        b = 11 ;
+        a = 56 ; // number of empty places to be made
+        b = 11 ; // number of random places in the puzzle
         break;
     default:
         printf("Press Enter to continue... ");
