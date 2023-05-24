@@ -95,7 +95,7 @@ int** createcontinuePuzzle()
             puzzle[i][j] = arr[i][j];
         }
     }
-
+    fclose(fptr);
     // returns the puzzle
     return puzzle;
 }
@@ -178,6 +178,7 @@ int** createPuzzle()
             puzzle[i][j] = arr[i][j];
         }
     }
+    fclose(fptr);
 
     // returns the new puzzle
     return puzzle;

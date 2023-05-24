@@ -75,6 +75,7 @@ int password()
         return 1;
     }else{                                                //if the username and password not matching to what is stored
         while(1){
+        	printf("\n\nWrong Username or Password...\n");
             printf("\nPress Enter to try again or press \"q\" to quit.\n");
             c = getchar();
             if((c == 'q') || (c == 'Q')){

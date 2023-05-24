@@ -166,6 +166,7 @@ void addautolevel()
         fflush(stdin);
         return;
     }
+    fclose(fptr);
     return;
 }
 
